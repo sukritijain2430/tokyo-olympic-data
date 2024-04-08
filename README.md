@@ -11,44 +11,37 @@ Teams Data: The file contains all the teams. Columns: Name, Name of Country (NOC
 Source of the dataset: Link
 
 Data Architecture
-
+<img src="screenshots/data architecture.png">
 
 Data Ingestion
 Extract the data from the the github as a source using Azure Data Factory tool, building a data flow and loading it into Azure Data Lake storage:
-
-Screenshot (17)
+<img src="screenshots/data pipeline.png">
 
 Data Transformation in Azure Databricks:
 Write the code in Python to read the data stored in the Azure data lake, perform the transformations and then load the back to Azure data lake Gen 2
-
-Screenshot (27)
-
+<img src="screenshots/rawdata.png">
 Here you upload your transformed data in ADLS Gen 2:
 
 Screenshot (28)
 
-Screenshot (29)
-
 Data Analysis
 The final step is to analyse and derive important insights from this data using SQL.
 
-Calculating the total number of athletes from each country
-Screenshot (26)
+Calculating the total number of athletes from ran 1 to 10 country
 
-Total number of medals won by India
-Screenshot (23)
+<img src="screenshots/athletes_by_country.png">
 
-Total number of athletes by discipline in India
-Screenshot (24)
+Total no of athletes by discipline for top 5 country
+<img src="screenshots/athletes_by_discipline_country.png">
 
-SQL script 1 (5)
+Total no.of coaches by discipline
+<img src="screenshots/coaches_by_discipline.png">
 
-Countries with highest number of coaches
-Screenshot (30)
-
-SQL script 1 (6)
+No of coaches in the country who won the highest medals
+<img src="screenshots/coaches_by_country.png">
 
 -- calculate the average number of entries by gender for each discipline
-Screenshot (31)
+<img src="screenshots/male_female.png">
 
-SQL script 1 (7)
+Total no.of teams by each country
+<img src="screenshots/teams_by_country.png">
