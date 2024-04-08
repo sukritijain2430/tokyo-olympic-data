@@ -20,9 +20,10 @@ Extract the data from the the github as a source using Azure Data Factory tool, 
 Data Transformation in Azure Databricks:
 Write the code in Python to read the data stored in the Azure data lake, perform the transformations and then load the back to Azure data lake Gen 2
 <img src="screenshots/rawdata.png">
-Here you upload your transformed data in ADLS Gen 2:
+<img src="screenshots/databricks.png">
 
-Screenshot (28)
+Here you upload your transformed data in ADLS Gen 2:
+<img src="screenshots/transformdata.png">
 
 Data Analysis
 The final step is to analyse and derive important insights from this data using SQL.
